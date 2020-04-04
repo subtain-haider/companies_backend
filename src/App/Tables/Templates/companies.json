@@ -1,0 +1,96 @@
+{
+    "routePrefix": "administration.companies",
+    "crtNo": true,
+    "buttons": [
+        "excel",
+        "create",
+        "edit",
+        "destroy"
+    ],
+    "countCache": true,
+    "columns": [
+
+        {
+            "label": "Code",
+            "name": "code",
+            "data": "companies.code",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Name",
+            "name": "name",
+            "data": "companies.name",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Campus Head",
+            "name": "mandatary",
+            "data": "people.name",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Email",
+            "name": "email",
+            "data": "companies.email",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Phone",
+            "name": "phone",
+            "data": "companies.phone",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Status",
+            "name": "status",
+            "data": "companies.status",
+            "meta": [
+                "sortable",
+                "slot"
+            ],
+            "enum": "LaravelEnso\\Companies\\App\\Enums\\CompanyStatuses"
+        },
+        {
+            "label": "Status Value",
+            "name": "statusValue",
+            "data": "statusValue",
+            "meta": [
+                "rogue",
+                "notExportable"
+            ]
+        },
+        {
+            "label": "Tenant",
+            "name": "is_tenant",
+            "data": "companies.is_tenant",
+            "meta": [
+                "boolean",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Created at",
+            "name": "created_at",
+            "data": "companies.created_at",
+            "meta": [
+                "date",
+                "sortable"
+            ]
+        }
+    ]
+}

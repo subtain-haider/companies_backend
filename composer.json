@@ -1,0 +1,53 @@
+{
+    "name": "laravel-enso/companies",
+    "description": "Person management dependency for Laravel Enso",
+    "keywords": [
+        "laravel",
+        "laravel-enso",
+        "companies",
+        "company-management"
+    ],
+    "homepage": "https://github.com/laravel-enso/companies",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrian Ocneanu",
+            "email": "aocneanu@gmail.com",
+            "homepage": "https://laravel-enso.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "laravel-enso/core": "4.8.*",
+        "laravel-enso/addresses": "3.4.*",
+        "laravel-enso/comments": "3.3.*",
+        "laravel-enso/enums": "1.2.*",
+        "laravel-enso/discussions": "2.3.*",
+        "laravel-enso/documents": "3.4.*",
+        "laravel-enso/dynamic-methods": "1.1.*",
+        "laravel-enso/forms": "3.4.*",
+        "laravel-enso/helpers": "1.15.*",
+        "laravel-enso/migrator": "1.1.*",
+        "laravel-enso/people": "2.5.*",
+        "laravel-enso/rememberable": "2.2.*",
+        "laravel-enso/track-who": "1.9.*",
+        "laravel-enso/tables": "3.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelEnso\\Companies\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelEnso\\Companies\\AppServiceProvider",
+                "LaravelEnso\\Companies\\AuthServiceProvider",
+                "LaravelEnso\\Companies\\SearchServiceProvider",
+                "LaravelEnso\\Companies\\EnumServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
