@@ -17,6 +17,7 @@ use LaravelEnso\Tables\App\Traits\TableCache;
 use LaravelEnso\TrackWho\App\Traits\CreatedBy;
 use LaravelEnso\TrackWho\App\Traits\UpdatedBy;
 use Sibtain\Classrooms\App\Models\Classroom;
+use Sibtain\Grades\App\Grade;
 use Sibtain\Teachers\App\Teacher;
 
 class Company extends Model
@@ -39,6 +40,11 @@ class Company extends Model
     public function teacher()
     {
         return $this->belongsToMany(Teacher::class);
+    }
+
+    public function grade()
+    {
+        return $this->hasOne(Grade::class);
     }
 
     public function classroom()
